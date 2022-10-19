@@ -23,3 +23,4 @@ canny = canny(lane_image)
 
 cv2.imshow("result", region_of_interest(canny))
 cv2.waitKey(0)
+//ijedqowidjq 
