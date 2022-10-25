@@ -7,6 +7,13 @@ def draw(x1,x2):
 def sigmoid(score):
     return  1/(1+np.exp(-score))
 
+def calculate_error(line_parameters, points , y):
+  n=points.shape[0]
+  p= sigmoid(points*line_parameters)
+  cross_entropy=-(1/n)*(np.log(p).T*y + np.log(1-p).T*(1-y))
+  return cross_entropy
+
+
 n_pts = 100
 np.random.seed(0)
 bias = np.ones(n_pts)
@@ -29,3 +36,5 @@ ax.scatter(top_region[:,0], top_region[:,1], color = 'r')
 ax.scatter(bottom_region[:,0], bottom_region[:,1], color = 'b')
 draw(x1,x2)
 plt.show()
+
+print((calculate_error))
