@@ -28,6 +28,7 @@ def gradient_descent(line_parameters, points, y , alpha):
 n_pts=100
 np.random.seed(0)
 bias= np.ones(n_pts)
+
 top_region=np.array([np.random.normal(10,2,n_pts), np.random.normal(12,2,n_pts), bias]).T
 bottom_region= np.array([np.random.normal(5,2, n_pts), np.random.normal(6,2, n_pts), bias]).T
 all_points=np.vstack((top_region, bottom_region))
