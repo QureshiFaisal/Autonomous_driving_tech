@@ -43,3 +43,5 @@ ax.scatter(top_region[:,0], top_region[:,1], color='r')
 ax.scatter(bottom_region[:,0], bottom_region[:,1], color='b')
 gradient_descent(line_parameters, all_points, y , 0.06)
 plt.show()
+
+print((calculate_error(line_parameters, all_points, y)))
