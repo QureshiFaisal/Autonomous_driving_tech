@@ -46,9 +46,9 @@ def plot_decision_boundary(X, y, model):
     z = pred_func.reshape(xx.shape)
     plt.contourf(xx, yy, z)
 
-    plot_decision_boundary(X, y, model)
-plt.scatter(X[:n_pts,0], X[:n_pts,1])
-plt.scatter(X[n_pts:,0], X[n_pts:,1])
+#     plot_decision_boundary(X, y, model)
+# plt.scatter(X[:n_pts,0], X[:n_pts,1])
+# plt.scatter(X[n_pts:,0], X[n_pts:,1])
 
 plot_decision_boundary(X, y, model)
 plt.scatter(X[:n_pts,0], X[:n_pts,1])
